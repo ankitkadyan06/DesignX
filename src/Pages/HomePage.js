@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <Header/>
-      <div className='mt-[4.5%]'>HomePage</div>
+      <div className='mt-[70px]'>HomePage</div>
     </div>
   )
 }
