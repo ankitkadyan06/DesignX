@@ -39,17 +39,17 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.to} className="font-inter no-underline text-lg leading-6 text-[#000]">
+              <Link key={item.name} to={item.to} className="font-inter no-underline text-base leading-6 text-[#000]">
                 {item.name}
               </Link>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end mr-[8%]">
-            <Link to="#" className="leading-6 text-[#000] no-underline text-lg mt-[3%] xl:mt-[1.7%]">
+          <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end mr-[0%] xl:mr-[8%]">
+            <Link to="#" className="leading-6 text-[#000] no-underline text-base mt-[3%] xl:mt-[1.7%]">
               Support
             </Link>
-            <Link to="#" className="text-lg leading-6 text-[#000] no-underline mt-[3%] xl:mt-[1.7%]">
-              Log in
+            <Link to="#" className="text-base leading-6 text-[#000] no-underline mt-[3%] xl:mt-[1.7%]">
+              Login
             </Link>
             <button to="#" className="text-sm leading-6 text-white no-underlines font-inter bg-[#0027D6] rounded-[64px] py-[10px] px-[10px]">
               Demo
@@ -83,7 +83,7 @@ export default function Example() {
                     <Link
                       key={item.name}
                       to={item.to}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 no-underline block rounded-lg px-3 py-2 text-base font-inter leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
                     </Link>
@@ -92,10 +92,22 @@ export default function Example() {
                 <div className="py-6">
                   <Link
                     to="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg font-inter px-3 py-2.5 text-base no-underline leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Log in
+                    Support
                   </Link>
+                  <Link
+                    to="#"
+                    className="-mx-3 block rounded-lg font-inter px-3 py-2.5 text-base no-underline leading-7 text-[#000] hover:bg-gray-50"
+                  >
+                    Login
+                  </Link>
+                  <button
+                    to="#"
+                    className="-mx-3 block rounded-[64px] font-inter px-3 py-2.5 text-base no-underline leading-7 text-white bg-[#0027D6] hover:bg-gray-50"
+                  >
+                    Demo
+                  </button>
                 </div>
               </div>
             </div>

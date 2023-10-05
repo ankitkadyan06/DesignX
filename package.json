@@ -1,5 +1,6 @@
 {
   "name": "designx",
+  "homepage": "https://devn.dfos.co/designx/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
