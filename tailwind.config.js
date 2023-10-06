@@ -9,7 +9,8 @@ module.exports = {
       'poppins': [ 'Poppins', 'sans-serif'],
       'montserrat': [ 'Montserrat', 'sans-serif'],
       'ubuntu': ['Ubuntu', 'sans-serif'],
-      'inter': ['inter', 'sans-serif']
+      'inter': ['inter', 'sans-serif'],
+      'robotoSlab': ['Roboto Slab', 'serif']
     }
   },
   plugins: [],
