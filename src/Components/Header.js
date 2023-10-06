@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import Logo from './assets/images/DesignXlogo.svg'
+import  Logo from './assets/images/DesignXlogo.svg'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 
@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Blog', to: '#' },
 ]
 
-export default function Example() {
+ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -119,3 +119,4 @@ export default function Example() {
     </div>
   )
 }
+
