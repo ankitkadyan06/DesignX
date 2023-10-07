@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // import prevbutton from "../assets/images/backButton.svg";
 // import nextbutton from "../assets/images/nextButton.svg";
 import Marquee from "react-fast-marquee";
@@ -9,42 +9,66 @@ import Lotus from "../assets/images/lotus.svg";
 import Suzuki from "../assets/images/suzuki.svg";
 import CountUp from "react-countup";
 
-const totalSteps = 5;
+const TotalSteps = 5;
+const StepsPerPage = 3;
 
 const Steps = () => {
   const [currentStep, setCurrentStep] = useState(1);
- console.log(currentStep);
+
   const handleNext = () => {
-    if (currentStep < totalSteps) {
-      setCurrentStep(prevStep => prevStep + 1);
+    if (currentStep < TotalSteps) {
+      setCurrentStep((prevStep) => prevStep + 1);
     }
   };
 
   const handlePrev = () => {
     if (currentStep > 1) {
-      setCurrentStep(prevStep => prevStep - 1);
+      setCurrentStep((prevStep) => prevStep - 1);
     }
   };
+
+  const renderSteps = () => {
+    const stepComponents = [];
+  
+    if (currentStep <= 3) {
+      for (let i = 1; i <= 3; i++) {
+        stepComponents.push(
+          <div
+            key={i}
+            className={`step ${i === currentStep ? "active" : ""}`}
+          >
+            {i}
+          </div>
+        );
+      }
+    } else {
+      for (let i = currentStep - 2; i <= currentStep; i++) {
+        stepComponents.push(
+          <div
+            key={i}
+            className={`step ${i === currentStep ? "active" : ""}`}
+          >
+            {i}
+          </div>
+        );
+      }
+    }
+  
+    return stepComponents;
+  };
+
+
   return (
     <div>
-     <div className="carousel-container">
-      <div className="steps">
-        {[...Array(3).keys()].map(index => (
-          <div
-            key={index + 1}
-            className={`step ${index + 1 === currentStep ? 'active' : ''}`}
-          >
-            {index + currentStep}
-          </div>
-        ))}
+      <div className="carousel-container">
+        <div className="steps">{renderSteps()}</div>
+        <button onClick={handlePrev} disabled={currentStep === 1}>
+          Previous
+        </button>
+        <button onClick={handleNext} disabled={currentStep === TotalSteps}>
+          Next
+        </button>
       </div>
-      <button onClick={handlePrev} className="prev-button" disabled={currentStep === 1}>
-        Prev
-      </button>
-      <button onClick={handleNext} className="next-button" disabled={currentStep === totalSteps}>
-        Next
-      </button>
-    </div>
       <div className="text-center mt-[112px] font-robotoSlab text-5xl font-semibold text-[#1B1A20]">
         Excellence Trusted by
         <span className="text-[#0027D6]"> Global customer</span>
@@ -105,8 +129,8 @@ const Steps = () => {
 
 export default Steps;
 
-
-{/* <div className="steps w-full h-[148px] mt-[-80px] items-center pl-[65px]">
+{
+  /* <div className="steps w-full h-[148px] mt-[-80px] items-center pl-[65px]">
 <ul className="flex">
   <li className="firstList bg-[#E9E9E9] w-[372px] h-[183px] rounded-[10px] mt-[-17px] py-[50px] px-[26px]">
     <div className="text-[#151515] text-[22px] font-semibold">
@@ -133,4 +157,5 @@ export default Steps;
     <img src={nextbutton} alt="" className="ml-[34px] cursor-pointer" />
   </li>
 </ul>
-</div> */}
+</div> */
+}
