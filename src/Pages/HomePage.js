@@ -2,8 +2,11 @@ import React from 'react'
 import Header from '../Components/Header'
 import ContentFirst from '../Components/HomePage/ContentFirst'
 import Steps from '../Components/HomePage/Steps'
-import Carousel from '../Components/HomePage/Carousel'
+
 import ContentSecond from '../Components/HomePage/ContentSecond'
+import Wheel from '../Components/HomePage/Wheel'
+import TestimonialSlides from '../Components/HomePage/TestimonialSlides'
+import Footer from './../Components/Footer';
 const HomePage = () => {
   return (
     <div>
@@ -12,8 +15,10 @@ const HomePage = () => {
         <ContentFirst/>
         <Steps/>
         <ContentSecond/>
-        <Carousel/>
+        <Wheel/>
+        <TestimonialSlides/>
       </div>
+      <Footer/>
     </div>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Carousel = () => {
+const Footer = () => {
   return (
     <div>
-      Carousel
+      footer
     </div>
   )
 }
 
-export default Carousel
+export default Footer
