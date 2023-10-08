@@ -10,7 +10,33 @@ import Suzuki from "../assets/images/suzuki.svg";
 import CountUp from "react-countup";
 
 const TotalSteps = 5;
-const StepsPerPage = 3;
+// const StepsPerPage = 3;/
+const stepData = [
+  {
+    stepHead: "Step 1",
+    stepDesc: "Identify the shopfloor operation for digitization"
+  },
+  {
+    stepHead: "Step 1",
+    stepDesc: "Identify the shopfloor operation for digitization"
+  },
+  {
+    stepHead: "Step 2",
+    stepDesc: "Identify the shopfloor operation for digitization"
+  },
+  {
+    stepHead: "Step 3",
+    stepDesc: "Identify the shopfloor operation for digitization"
+  },
+  {
+    stepHead: "Step 4",
+    stepDesc: "Identify the shopfloor operation for digitization"
+  },
+  {
+    stepHead: "Step 5",
+    stepDesc: "Identify the shopfloor operation for digitization"
+  }
+]
 
 const Steps = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -29,39 +55,50 @@ const Steps = () => {
 
   const renderSteps = () => {
     const stepComponents = [];
-  
+
     if (currentStep <= 3) {
       for (let i = 1; i <= 3; i++) {
         stepComponents.push(
-          <div
-            key={i}
-            className={`step ${i === currentStep ? "active" : ""}`}
-          >
-            {i}
-          </div>
+          <li className={`step ${i === currentStep ?"firstList bg-[#E9E9E9] w-[372px] h-[183px] rounded-[10px] mt-[10px] py-[50px] px-[26px]":"w-[372px] h-[183px]  rounded-[10px] mt-[10px] py-[50px] px-[26px]"}`} key={i}>
+            <div
+              className={`step ${i === currentStep ? "text-[#151515] text-[22px] font-medium " : "text-white text-[22px] font-medium"}`}
+            >
+              {stepData[i].stepHead}
+              <div className={`step ${i === currentStep ? "text-[#657385] font-poppins text-lg " : "text-white font-poppins text-lg font-normal"}`}>
+                {stepData[i].stepDesc}
+              </div>
+            </div>
+          </li>
         );
       }
     } else {
       for (let i = currentStep - 2; i <= currentStep; i++) {
         stepComponents.push(
-          <div
-            key={i}
-            className={`step ${i === currentStep ? "active" : ""}`}
-          >
-            {i}
-          </div>
+          <li className={`step ${i === currentStep ?"firstList bg-[#E9E9E9] w-[372px] h-[183px] rounded-[10px] mt-[10px] py-[50px] px-[26px]":"w-[372px] h-[183px]  rounded-[10px] mt-[10px] py-[50px] px-[26px]"}`} key={i}>
+            <div
+
+              className={`step ${i === currentStep ? "text-[#151515] text-[22px] font-medium " : "text-white text-[22px] font-medium"}`}
+            >
+              {stepData[i].stepHead}
+              <div className={`step ${i === currentStep ? "text-[#657385] font-poppins text-lg " : "text-white font-poppins text-lg font-normal"}`}>
+                {stepData[i].stepDesc}
+              </div>
+            </div>
+          </li>
         );
       }
     }
-  
+
     return stepComponents;
   };
 
 
   return (
     <div>
-      <div className="carousel-container">
-        <div className="steps">{renderSteps()}</div>
+      <div className="steps w-full h-[148px] mt-[-80px] items-center pl-[65px] bg-[#3490dc]">
+        <ul className="flex ">
+          {renderSteps()}
+        </ul>
         <button onClick={handlePrev} disabled={currentStep === 1}>
           Previous
         </button>
