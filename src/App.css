@@ -23,7 +23,7 @@
 }
 
 .backNo{
-  background: url("./Components/assets/images/backgroudNo.svg");
+  background: no-repeat center/100% url("./Components/assets/images/backgroudNo.svg");
 }
 
 /* width */
@@ -59,7 +59,7 @@
   margin: 0 20px;
 }
 
-.step {
+/* .step {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -68,7 +68,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-}
+} */
 
 .step.active {
   background-color: #3490dc;
