@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import prevbutton from "../assets/images/backButton.svg";
-// import nextbutton from "../assets/images/nextButton.svg";
+import prevbutton from "../assets/images/backButton.svg";
+import nextbutton from "../assets/images/nextButton.svg";
 import Marquee from "react-fast-marquee";
 import Hero from "../assets/images/hero.svg";
 import Unilever from "../assets/images/unilever.svg";
@@ -81,7 +81,7 @@ const Steps = () => {
             >
               {stepData[i].stepHead}
               <div className={`step ${i === currentStep ? "text-[#657385] font-poppins text-lg " : "text-white font-poppins text-lg font-normal"}`}>
-                {stepData[i].stepDesc}
+                {stepData[i].stepDesc} 
               </div>
             </div>
           </li>
@@ -99,12 +99,10 @@ const Steps = () => {
         <ul className="flex ">
           {renderSteps()}
         </ul>
-        <button onClick={handlePrev} disabled={currentStep === 1}>
-          Previous
-        </button>
-        <button onClick={handleNext} disabled={currentStep === TotalSteps}>
-          Next
-        </button>
+        <div className="flex ml-[6%]">
+        <img src={prevbutton} alt="" onClick={handlePrev} disabled={currentStep === 1} className="cursor-pointer"/>
+        <img src={nextbutton} alt="" onClick={handleNext} disabled={currentStep === TotalSteps} className="cursor-pointer ml-[20%]"/>
+        </div>
       </div>
       <div className="text-center mt-[112px] font-robotoSlab text-5xl font-semibold text-[#1B1A20]">
         Excellence Trusted by
@@ -165,34 +163,3 @@ const Steps = () => {
 };
 
 export default Steps;
-
-{
-  /* <div className="steps w-full h-[148px] mt-[-80px] items-center pl-[65px]">
-<ul className="flex">
-  <li className="firstList bg-[#E9E9E9] w-[372px] h-[183px] rounded-[10px] mt-[-17px] py-[50px] px-[26px]">
-    <div className="text-[#151515] text-[22px] font-semibold">
-      Step 1
-    </div>
-    <div className="text-[#657385] font-poppins text-lg">
-      Identify the shopfloor operation for digitization
-    </div>
-  </li>
-  <li className="w-[372px] h-[183px] rounded-[10px] mt-[-17px] py-[50px] px-[26px]">
-    <div className="text-white text-[22px] font-semibold">Step 2</div>
-    <div className="text-white font-poppins text-lg font-normal">
-      Identify the shopfloor operation for digitization
-    </div>
-  </li>
-  <li className="w-[372px] h-[183px] rounded-[10px] mt-[-17px] py-[50px] px-[26px]">
-    <div className="text-white text-[22px] font-semibold">Step 3</div>
-    <div className="text-white font-poppins text-lg font-normal">
-      Identify the shopfloor operation for digitization
-    </div>
-  </li>
-  <li className="flex ml-[190px]">
-    <img src={prevbutton} alt="" className="cursor-pointer" />
-    <img src={nextbutton} alt="" className="ml-[34px] cursor-pointer" />
-  </li>
-</ul>
-</div> */
-}
