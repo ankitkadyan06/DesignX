@@ -127,22 +127,22 @@ const Steps = () => {
 
   return (
     <div>
-      <div className="steps block lg:flex w-full h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[50px]">
-        <ul className="flex ">{renderSteps()}</ul>
+      <div className="steps block md:flex w-full h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[50px]">
+        <ul className="block md:flex ">{renderSteps()}</ul>
         <div className="flex ml-[0%] md:ml-[2%] 2xl:ml-[6%]">
           <img
             src={prevbutton}
             alt=""
             onClick={handlePrev}
             disabled={currentStep === 1}
-            className="cursor-pointer w-[44px] h-[44px]"
+            className="cursor-pointer w-[30px] lg:w-[44px] h-[30px] lg:h-[44px]"
           />
           <img
             src={nextbutton}
             alt=""
             onClick={handleNext}
             disabled={currentStep === TotalSteps}
-            className="cursor-pointer ml-[20%] w-[44px] h-[44px]"
+            className="cursor-pointer ml-[20%] w-[30px] lg:w-[44px] h-[30px] lg:h-[44px]"
           />
         </div>
       </div>

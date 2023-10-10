@@ -6,7 +6,7 @@ import videoFirst from "../assets/images/dummyOne.svg";
 const ContentFirst = () => {
   return (
     <div className="container mx-auto px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="block md:grid md:grid-cols-2 gap-4">
         <div className="mt-5 md:mt-0">
           <p className="text-[#1B1A20] font-poppins text-xl sm:text-3xl lg:text-5xl font-medium leading-[1.2] sm:leading-[40.2px] lg:leading-[57.6px]">
             Create digital wings for shop floors
@@ -32,11 +32,11 @@ const ContentFirst = () => {
           </div>
         </div>
         <div className="mt-5 md:mt-0">
-          <img src={Side} alt="" className="w-[15%] ml-[10%] sm:ml-[10%] xl:ml-[6%] 2xl:ml-[4%]" />
+          <img src={Side} alt="" className="w-[15%] ml-[-6%] sm:ml-[-6%] md:ml-[6%] 2xl:ml-[4%]" />
           <img
             src={videoFirst}
             alt=""
-            className="relative z-[1] bottom-[25%] md:bottom-[37%] lg:bottom-[30%] xl:bottom-[30%] 2xl:bottom-[27%] mr-auto ml-[0px] mt-5 md:mt-0 md:ml-12 lg:ml-16 w-full md:w-[713px] h-[40%] md:h-[373px]"
+            className="relative z-[1] bottom-[60px] md:bottom-[135px] lg:bottom-[25%] xl:bottom-[20%] mr-auto ml-[0px]  md:mt-0 md:ml-12 lg:ml-16 w-full md:w-[713px] h-[40%] md:h-[373px]"
           />
         </div>
       </div>
