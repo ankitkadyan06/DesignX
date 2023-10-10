@@ -49,7 +49,7 @@
 
 
 .steps {
-  display: flex;
+  /* display: flex; */
   margin: 10px 0px;
   background: linear-gradient(90deg, #0027D6 0%, #08F 100%);
 }

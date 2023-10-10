@@ -3,6 +3,7 @@ import Header from '../Components/Header'
 import HeaderSec from '../Components/Product/HeaderSec'
 import ProductContOne from '../Components/Product/ProductContOne'
 import Scroller from '../Components/Product/Scroller'
+import CardProduct from '../Components/Product/CardProduct'
 const Product = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const Product = () => {
       <HeaderSec/>
       <ProductContOne/>
       <Scroller/>
+     <CardProduct/>
       </div>
     </div>
   )

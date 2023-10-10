@@ -127,7 +127,7 @@ const Steps = () => {
 
   return (
     <div>
-      <div className="steps w-full h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[50px]">
+      <div className="steps block lg:flex w-full h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[50px]">
         <ul className="flex ">{renderSteps()}</ul>
         <div className="flex ml-[0%] md:ml-[2%] 2xl:ml-[6%]">
           <img

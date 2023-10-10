@@ -44,7 +44,7 @@ const TestimonialSlides = () => {
   
 
   return (
-    <div className="testBack w-full h-[834px]">
+    <div className="testBack w-full h-[1100px] lg:h-[834px] px-[10px]">
       <div className="block lg:grid lg:grid-cols-2">
         <div>
           <img src={arrowWhite} alt="" className="mt-[89px] ml-[241px]" />
