@@ -101,3 +101,8 @@
   display: none;
 }
 
+.headerSecback{
+  border-radius: 0px 0px 284px 0px;
+background: linear-gradient(90deg, #0027D6 0.01%, rgba(0, 136, 255, 0.79) 98.81%);
+height: 303px;
+}

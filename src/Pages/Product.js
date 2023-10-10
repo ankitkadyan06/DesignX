@@ -1,9 +1,13 @@
 import React from 'react'
-
+import Header from '../Components/Header'
+import HeaderSec from '../Components/Product/HeaderSec'
 const Product = () => {
   return (
     <div>
-      Product
+      <Header/>
+      <div className='mt-[70px]'>
+      <HeaderSec/>
+      </div>
     </div>
   )
 }

@@ -14,29 +14,29 @@ const TotalSteps = 5;
 const stepData = [
   {
     stepHead: "Step 1",
-    stepDesc: "Identify the shopfloor operation for digitization"
+    stepDesc: "Identify the shopfloor operation for digitization",
   },
   {
     stepHead: "Step 1",
-    stepDesc: "Identify the shopfloor operation for digitization"
+    stepDesc: "Identify the shopfloor operation for digitization",
   },
   {
     stepHead: "Step 2",
-    stepDesc: "Identify the shopfloor operation for digitization"
+    stepDesc: "Identify the shopfloor operation for digitization",
   },
   {
     stepHead: "Step 3",
-    stepDesc: "Identify the shopfloor operation for digitization"
+    stepDesc: "Identify the shopfloor operation for digitization",
   },
   {
     stepHead: "Step 4",
-    stepDesc: "Identify the shopfloor operation for digitization"
+    stepDesc: "Identify the shopfloor operation for digitization",
   },
   {
     stepHead: "Step 5",
-    stepDesc: "Identify the shopfloor operation for digitization"
-  }
-]
+    stepDesc: "Identify the shopfloor operation for digitization",
+  },
+];
 
 const Steps = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -59,12 +59,29 @@ const Steps = () => {
     if (currentStep <= 3) {
       for (let i = 1; i <= 3; i++) {
         stepComponents.push(
-          <li className={`step ${i === currentStep ?"firstList bg-[#E9E9E9] w-[372px] h-[183px] rounded-[10px] mt-[10px] py-[50px] px-[26px]":"w-[372px] h-[183px]  rounded-[10px] mt-[10px] py-[50px] px-[26px]"}`} key={i}>
+          <li
+            className={`step ${
+              i === currentStep
+                ? "firstList bg-[#E9E9E9] w-[200px] xl:w-[372px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                : " w-[200px] xl:w-[372px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+            }`}
+            key={i}
+          >
             <div
-              className={`step ${i === currentStep ? "text-[#151515] text-[22px] font-medium " : "text-white text-[22px] font-medium"}`}
+              className={`step ${
+                i === currentStep
+                  ? "text-[#151515] text-[16px] xl:text-[22px] font-medium "
+                  : "text-white text-[16px] xl:text-[22px] font-medium"
+              }`}
             >
               {stepData[i].stepHead}
-              <div className={`step ${i === currentStep ? "text-[#657385] font-poppins text-lg " : "text-white font-poppins text-lg font-normal"}`}>
+              <div
+                className={`step ${
+                  i === currentStep
+                    ? "text-[#657385] font-poppins text-sm xl:text-lg "
+                    : "text-white font-poppins text-sm xl:text-lg font-normal"
+                }`}
+              >
                 {stepData[i].stepDesc}
               </div>
             </div>
@@ -74,14 +91,30 @@ const Steps = () => {
     } else {
       for (let i = currentStep - 2; i <= currentStep; i++) {
         stepComponents.push(
-          <li className={`step ${i === currentStep ?"firstList bg-[#E9E9E9] w-[372px] h-[183px] rounded-[10px] mt-[10px] py-[50px] px-[26px]":"w-[372px] h-[183px]  rounded-[10px] mt-[10px] py-[50px] px-[26px]"}`} key={i}>
+          <li
+            className={`step ${
+              i === currentStep
+                ? "firstList bg-[#E9E9E9] w-[200px] xl:w-[372px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                : " w-[200px] xl:w-[372px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+            }`}
+            key={i}
+          >
             <div
-
-              className={`step ${i === currentStep ? "text-[#151515] text-[22px] font-medium " : "text-white text-[22px] font-medium"}`}
+              className={`step ${
+                i === currentStep
+                  ? "text-[#151515] text-[16px] xl:text-[22px] font-medium "
+                  : "text-white text-[16px] xl:text-[22px] font-medium"
+              }`}
             >
               {stepData[i].stepHead}
-              <div className={`step ${i === currentStep ? "text-[#657385] font-poppins text-lg " : "text-white font-poppins text-lg font-normal"}`}>
-                {stepData[i].stepDesc} 
+              <div
+                className={`step ${
+                  i === currentStep
+                    ? "text-[#657385] font-poppins text-sm xl:text-lg "
+                    : "text-white font-poppins text-sm xl:text-lg font-normal"
+                }`}
+              >
+                {stepData[i].stepDesc}
               </div>
             </div>
           </li>
@@ -92,19 +125,28 @@ const Steps = () => {
     return stepComponents;
   };
 
-
   return (
     <div>
-      <div className="steps w-full h-[148px] mt-[-80px] items-center pl-[65px] bg-[#3490dc]">
-        <ul className="flex ">
-          {renderSteps()}
-        </ul>
+      <div className="steps w-full h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[65px] bg-[#3490dc]">
+        <ul className="flex ">{renderSteps()}</ul>
         <div className="flex ml-[6%]">
-        <img src={prevbutton} alt="" onClick={handlePrev} disabled={currentStep === 1} className="cursor-pointer"/>
-        <img src={nextbutton} alt="" onClick={handleNext} disabled={currentStep === TotalSteps} className="cursor-pointer ml-[20%]"/>
+          <img
+            src={prevbutton}
+            alt=""
+            onClick={handlePrev}
+            disabled={currentStep === 1}
+            className="cursor-pointer"
+          />
+          <img
+            src={nextbutton}
+            alt=""
+            onClick={handleNext}
+            disabled={currentStep === TotalSteps}
+            className="cursor-pointer ml-[20%]"
+          />
         </div>
       </div>
-      <div className="text-center mt-[112px] font-robotoSlab text-5xl font-semibold text-[#1B1A20]">
+      <div className="text-center mt-[112px] font-robotoSlab text-xl sm:text-3xl lg:text-5xl font-semibold text-[#1B1A20]">
         Excellence Trusted by
         <span className="text-[#0027D6]"> Global customer</span>
       </div>
@@ -130,31 +172,31 @@ const Steps = () => {
           </div>
         </Marquee>
       </div>
-      <div className="backNo w-full h-[221px] mt-[118px] flex justify-around pt-[50px]">
-        <div className="text-white font-poppins text-[38px]">
+      <div className="backNo w-full h-[230px] md:h-auto px-6 mt-[118px] flex justify-around pt-[70px] lg:pt-[50px]">
+        <div className="text-white font-poppins text-xl md:text-[28px] xl:text-[38px]">
           <CountUp start={0} end={350} delay={1} />
           <span>+</span>
-          <p className="text-[28px] text-center w-[63%] relative right-[50px]">
+          <p className="text-[16px] sm:text-[20px] xl:text-[28px] text-center w-[63%] relative p-2 right-[50px]">
             Manufacturing Plants
           </p>
         </div>
-        <div className="text-white font-poppins text-[38px]">
+        <div className="text-white font-poppins text-xl md:text-[28px] xl:text-[38px]">
           <CountUp start={0} end={40} delay={1} />
           <span>+</span>
-          <p className="text-[28px] text-center relative right-[45px]">
+          <p className="text-[16px] sm:text-[20px] xl:text-[28px] text-center relative p-2 right-[45px]">
             Customers
           </p>
         </div>
-        <div className="text-white font-poppins text-[38px]">
+        <div className="text-white font-poppins text-xl md:text-[28px] xl:text-[38px]">
           <CountUp start={0} end={1550} delay={1} />
           <span>+</span>
-          <p className="text-[28px] text-center relative right-[50px]">
+          <p className="text-[16px] sm:text-[20px] xl:text-[28px] text-center relative p-2 right-[50px]">
             Project Excluded
           </p>
         </div>
       </div>
 
-      <div className="text-center mt-[112px] font-robotoSlab text-5xl font-semibold text-[#1B1A20]">
+      <div className="text-center mt-[112px] font-robotoSlab text-xl sm:text-3xl lg:text-5xl font-semibold text-[#1B1A20]">
         Transform your
         <span className="text-[#0027D6]"> shop floor</span> in one go!
       </div>
