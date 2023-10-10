@@ -62,8 +62,8 @@ const Steps = () => {
           <li
             className={`step ${
               i === currentStep
-                ? "firstList bg-[#E9E9E9] w-[200px] xl:w-[372px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
-                : " w-[200px] xl:w-[372px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                ? "firstList bg-[#E9E9E9] w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                : " w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
             }`}
             key={i}
           >
@@ -94,8 +94,8 @@ const Steps = () => {
           <li
             className={`step ${
               i === currentStep
-                ? "firstList bg-[#E9E9E9] w-[200px] xl:w-[372px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
-                : " w-[200px] xl:w-[372px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                ? "firstList bg-[#E9E9E9] w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                : " w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
             }`}
             key={i}
           >
@@ -127,22 +127,22 @@ const Steps = () => {
 
   return (
     <div>
-      <div className="steps w-full h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[65px] bg-[#3490dc]">
+      <div className="steps w-full h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[50px]">
         <ul className="flex ">{renderSteps()}</ul>
-        <div className="flex ml-[6%]">
+        <div className="flex ml-[0%] md:ml-[2%] 2xl:ml-[6%]">
           <img
             src={prevbutton}
             alt=""
             onClick={handlePrev}
             disabled={currentStep === 1}
-            className="cursor-pointer"
+            className="cursor-pointer w-[44px] h-[44px]"
           />
           <img
             src={nextbutton}
             alt=""
             onClick={handleNext}
             disabled={currentStep === TotalSteps}
-            className="cursor-pointer ml-[20%]"
+            className="cursor-pointer ml-[20%] w-[44px] h-[44px]"
           />
         </div>
       </div>
