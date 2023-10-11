@@ -6,12 +6,12 @@ import hectos from '../assets/images/hectos.svg'
 const ProductContOne = () => {
   return (
     <div className="mt-[70px] mx-[100px]">
-      <div className="grid grid-cols-2 gap-4 mb-[20px]">
+      <div className="block lg:grid lg:grid-cols-2 gap-4 mb-[10px] lg:mb-[20px]">
         <div className="text-justify">
           <p className="text-[#1B1A20] font-poppins text-[28px] font-medium">
             What is DFOS?
           </p>
-          <p className="text-[#657385] text-[18px]">
+          <p className="text-[#657385] text-base lg:text-[18px] ">
             DFOS, or Digital Factory Operating System, is a SaaS-based product
             to design, analyse, automate, and measure shop floor processes. In
             simple words, DFOS is a DIY platform that can help you connect
@@ -22,7 +22,7 @@ const ProductContOne = () => {
             rejection, and Safety hazards. So, streamline your manufacturing
             process with DFOS.
           </p>
-          <p className="text-[#657385] text-[18px]">
+          <p className="text-[#657385] text-base lg:text-[18px]">
             Presently, DFOS measures and analyses data in three different ways:
             the transfer of data from paper to DFOS, machines to DFOS, you to
             DFOS.
@@ -32,21 +32,21 @@ const ProductContOne = () => {
           <img
             src={dfosLand}
             alt=""
-            className="w-[614px] h-[391px] ml-[80px]"
+            className="w-[614px] ml-0 lg:ml-[80px]"
           />
         </div>
         <div>
           <img
             src={digitalProcess}
             alt=""
-            className="w-[616px] h-[349px] mt-[65px]"
+            className="w-[616px] mt-[65px]"
           />
         </div>
-        <div className=" ml-[80px]">
-          <p className="text-[#1B1A20] font-poppins text-[28px] mt-[146px] font-medium">
+        <div className="ml-0 lg:ml-[80px]">
+          <p className="text-[#1B1A20] font-poppins text-[28px] mt-[50px] lg:mt-[146px] font-medium">
             Digital Process
           </p>
-          <p className="text-[#657385] text-[18px] text-justify">
+          <p className="text-[#657385] text-base lg:text-[18px] text-justify">
             No more information storage costs, as by incorporating DFOS at your
             manufacturing unit, you can easily go paperless. Keeping virtual
             records amplifies your productivity, minimises the chances of data
@@ -56,10 +56,10 @@ const ProductContOne = () => {
           </p>
         </div>
         <div>
-          <p className="text-[#1B1A20] font-poppins text-[28px] mt-[146px] font-medium">
+          <p className="text-[#1B1A20] font-poppins text-[28px] mt-[50px] lg:mt-[146px] font-medium">
             IIOT
           </p>
-          <p className="text-[#657385] text-[18px] text-justify">
+          <p className="text-[#657385] text-base lg:text-[18px] text-justify">
             With the assistance of DFOS’s product, Hectos, all your data from
             machines can be automated. We provide you with an IOT gateway,
             Hectos, which is a device that connects all the machines installed
@@ -73,21 +73,21 @@ const ProductContOne = () => {
           <img
             src={hectos}
             alt=""
-            className="w-[616px] h-[349px] mt-[65px] ml-[80px]"
+            className="w-[616px] mt-[65px] ml-0 lg:ml-[80px]"
           />
         </div>
         <div>
           <img
             src={digitalTwin}
             alt=""
-            className="w-[616px] h-[349px] mt-[65px]"
+            className="w-[616px] mt-[65px]"
           />
         </div>
-        <div className=" ml-[80px]">
-          <p className="text-[#1B1A20] font-poppins text-[28px] mt-[146px] font-medium">
+        <div className="ml-0 lg:ml-[80px]">
+          <p className="text-[#1B1A20] font-poppins text-[28px] mt-[50px] lg:mt-[146px] font-medium">
             Digital Twin
           </p>
-          <p className="text-[#657385] text-[18px] text-justify">
+          <p className="text-[#657385] text-base lg:text-[18px] text-justify">
             We built a 3D digital twin of your complete shopfloor, which helps
             you check the functioning even when you aren’t around. Manage your
             manufacturing hub from anywhere around the globe with your

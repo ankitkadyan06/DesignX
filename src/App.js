@@ -6,7 +6,7 @@ import Product from './Pages/Product';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/designx'>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path='/Aboutus' element={<AboutUs/>}/>
