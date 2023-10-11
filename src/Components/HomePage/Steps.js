@@ -62,8 +62,8 @@ const Steps = () => {
           <li
             className={`step ${
               i === currentStep
-                ? "firstList bg-[#E9E9E9] w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
-                : " w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                ? "firstList bg-[#E9E9E9] w-[280px] md:w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                : "w-[280px] md:w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
             }`}
             key={i}
           >
@@ -94,8 +94,8 @@ const Steps = () => {
           <li
             className={`step ${
               i === currentStep
-                ? "firstList bg-[#E9E9E9] w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
-                : " w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                ? "firstList bg-[#E9E9E9] w-[280px] md:w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
+                : "w-[280px] md:w-[200px] xl:w-[350px] h-[128px] xl:h-[183px] rounded-[10px] mt-[10px] py-[20px] xl:py-[50px] px-[26px]"
             }`}
             key={i}
           >
@@ -127,9 +127,9 @@ const Steps = () => {
 
   return (
     <div>
-      <div className="steps block md:flex w-full h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[50px]">
+      <div className="steps block md:flex w-full lg:h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[20%] pt-[10px] pb-[10px] md:pl-[50px]">
         <ul className="block md:flex ">{renderSteps()}</ul>
-        <div className="flex ml-[0%] md:ml-[2%] 2xl:ml-[6%]">
+        <div className="flex ml-[16%] md:ml-[2%] 2xl:ml-[6%]">
           <img
             src={prevbutton}
             alt=""
@@ -172,7 +172,7 @@ const Steps = () => {
           </div>
         </Marquee>
       </div>
-      <div className="backNo w-full h-[230px] md:h-auto px-6 mt-[118px] flex justify-around pt-[70px] lg:pt-[50px]">
+      <div className="backNo flex flex-row justify-around w-full h-[230px] md:h-auto p-[60px] md:p-[50px] mt-[100px]">
         <div className="text-white font-poppins text-xl md:text-[28px] xl:text-[38px]">
           <CountUp start={0} end={350} delay={1} />
           <span>+</span>
@@ -205,3 +205,5 @@ const Steps = () => {
 };
 
 export default Steps;
+
+
