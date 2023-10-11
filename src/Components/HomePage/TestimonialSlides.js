@@ -44,10 +44,10 @@ const TestimonialSlides = () => {
   
 
   return (
-    <div className="testBack w-full h-[1100px] lg:h-[834px] px-[10px]">
+    <div className="testBack w-full h-[1100px] lg:h-[800px] xl:h-[600px] px-[10px]">
       <div className="block lg:grid lg:grid-cols-2">
         <div>
-          <img src={arrowWhite} alt="" className="mt-[89px] ml-[241px]" />
+          <img src={arrowWhite} alt="" className="mt-[30px] ml-[241px]" />
           <p className="w-[50%] ml-[102px] text-white font-poppins text-[42px] mt-[29px]">
             What Our Clients Are Saying...
           </p>
@@ -60,7 +60,7 @@ const TestimonialSlides = () => {
             </button>
           </div>
         </div>
-        <div className="mt-[100px]">
+        <div className="mt-[60px]">
           <img src={inverted} alt="" />
           <div className="carousel-container">
             {texts.map((text, index) => {

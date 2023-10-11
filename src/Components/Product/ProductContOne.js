@@ -2,6 +2,7 @@ import React from "react";
 import dfosLand from "../assets/images/dfosLand.svg";
 import digitalProcess from "../assets/images/digitalProcess.svg";
 import digitalTwin from "../assets/images/digitalTwin.svg";
+import hectos from '../assets/images/hectos.svg'
 const ProductContOne = () => {
   return (
     <div className="mt-[70px] mx-[100px]">
@@ -70,7 +71,7 @@ const ProductContOne = () => {
         </div>
         <div>
           <img
-            src={digitalProcess}
+            src={hectos}
             alt=""
             className="w-[616px] h-[349px] mt-[65px] ml-[80px]"
           />

@@ -26,6 +26,9 @@
   background: no-repeat center/100% url("./Components/assets/images/backgroudNo.svg");
 }
 
+.backDesign{
+  background: no-repeat url("./Components/assets/images/sideRect.svg");
+}
 /* width */
 ::-webkit-scrollbar {
   width: 1px;

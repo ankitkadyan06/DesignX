@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ContentSecond = () => {
   return (
     <div className="container mx-auto px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-[60px] ml-[100px]">
+      <div className="block md:grid md:grid-cols-2 gap-4 mt-[60px] pt-[1px] ml-[5px] md:ml-[100px]">
         <img src={ImgOne} alt="" className="w-[615px] h-[307px]" />
         <div className="mt-[34px]">
           <p className="text-[16px] sm:text-[20px] xl:text-[28px] font-poppins font-medium">
