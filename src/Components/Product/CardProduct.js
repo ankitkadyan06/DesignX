@@ -1,7 +1,7 @@
 import React from 'react'
-import card1 from '../assets/images/cardElement1.svg'
-import card2 from '../assets/images/cardElement2.svg'
-import card3 from '../assets/images/cardElement3.svg'
+import card1 from '../assets/images/cardA.jpg'
+import card2 from '../assets/images/cardB.jpg'
+import card3 from '../assets/images/cardC.jpg'
 import videoFirst from '../assets/images/dummyOne.svg'
 
 
