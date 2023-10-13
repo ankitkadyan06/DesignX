@@ -23,8 +23,9 @@
 }
 
 .backNo {
-  background: no-repeat center/100%
-    url("./Components/assets/images/backgroudNo.svg");
+  background: url("./Components/assets/images/backgroudNo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .backDesign {
@@ -78,7 +79,7 @@
 }
 
 .slide {
-  min-width: 40%;
+  min-width: 90%;
   padding: 20px;
   margin-right: 10px;
   background-color: #ffffff;
@@ -138,3 +139,19 @@ box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
 .vidView{
   border-radius: 5px 0px 0px 5px;
 }
+
+@media (min-width: 640px) {
+  .slide{
+    min-width: 50%;
+  }
+ }
+@media (min-width: 950px) {
+  .slide{
+    min-width: 60%;
+  }
+ }
+@media (min-width: 1280px) {
+  .slide{
+    min-width: 40%;
+  }
+ }

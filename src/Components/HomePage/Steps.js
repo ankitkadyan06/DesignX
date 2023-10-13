@@ -22,19 +22,19 @@ const stepData = [
   },
   {
     stepHead: "Step 2",
-    stepDesc: "Identify the shopfloor operation for digitization",
+    stepDesc: "Select the workflow from process library of DFOS™",
   },
   {
     stepHead: "Step 3",
-    stepDesc: "Identify the shopfloor operation for digitization",
+    stepDesc: "Customise the workflow as per requirement",
   },
   {
     stepHead: "Step 4",
-    stepDesc: "Identify the shopfloor operation for digitization",
+    stepDesc: "Check and perform the workflow created",
   },
   {
     stepHead: "Step 5",
-    stepDesc: "Identify the shopfloor operation for digitization",
+    stepDesc: "Add wings to your digital transformation journey",
   },
 ];
 
@@ -127,7 +127,7 @@ const Steps = () => {
 
   return (
     <div>
-      <div className="steps block md:flex w-full lg:h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[20%] pt-[10px] pb-[10px] md:pl-[50px]">
+      <div className="steps block md:flex w-full lg:h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[15%] sm:pl-[25%] pt-[10px] pb-[10px] md:pl-[50px]">
         <ul className="block md:flex ">{renderSteps()}</ul>
         <div className="flex ml-[16%] md:ml-[2%] 2xl:ml-[6%]">
           <img
@@ -172,25 +172,25 @@ const Steps = () => {
           </div>
         </Marquee>
       </div>
-      <div className="backNo flex flex-row justify-around w-full h-[230px] md:h-auto p-[60px] md:p-[50px] mt-[100px]">
-        <div className="text-white font-poppins text-xl md:text-[28px] xl:text-[38px]">
+      <div className="backNo block lg:flex justify-around w-full px-[50px] h-[350px] md:h-auto p-[60px] md:p-[50px] mt-[100px]">
+        <div className="text-white font-poppins text-xl text-center md:text-[28px] xl:text-[38px]">
           <CountUp start={0} end={350} delay={1} />
           <span>+</span>
-          <p className="text-[16px] sm:text-[20px] xl:text-[28px] text-center w-[63%] relative p-2 right-[50px]">
+          <p className="text-[16px] sm:text-[20px] xl:text-[28px] lg:w-[100%] relative p-2">
             Manufacturing Plants
           </p>
         </div>
-        <div className="text-white font-poppins text-xl md:text-[28px] xl:text-[38px]">
+        <div className="text-white font-poppins text-center text-xl md:text-[28px] xl:text-[38px]">
           <CountUp start={0} end={40} delay={1} />
           <span>+</span>
-          <p className="text-[16px] sm:text-[20px] xl:text-[28px] text-center relative p-2 right-[45px]">
+          <p className="text-[16px] sm:text-[20px] xl:text-[28px] relative p-2">
             Customers
           </p>
         </div>
-        <div className="text-white font-poppins text-xl md:text-[28px] xl:text-[38px]">
+        <div className="text-white font-poppins text-center text-xl md:text-[28px] xl:text-[38px]">
           <CountUp start={0} end={1550} delay={1} />
           <span>+</span>
-          <p className="text-[16px] sm:text-[20px] xl:text-[28px] text-center relative p-2 right-[50px]">
+          <p className="text-[16px] sm:text-[20px] xl:text-[28px] relative p-2">
             Project Excluded
           </p>
         </div>

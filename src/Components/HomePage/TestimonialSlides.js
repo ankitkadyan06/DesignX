@@ -7,30 +7,26 @@ import inverted from "../assets/images/inverted.svg";
 const TestimonialSlides = () => {
   const texts = [
     {
-      head: "Horem ipsum dolor sit1 ",
-      orgName: "Organization Name",
-      desc: "Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet.",
+      head: "Vinod Mishra",
+      orgName: "HUL-ORAI",
+      desc: "DesignX is a team of professionals. They always act fast on any issue/support required and the good part is that they update after the issue is resolved. Best of luck for the DesignX team..",
     },
     {
-      head: "Horem ipsum dolor sit2 ",
-      orgName: "Organization Name",
-      desc: "Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet.",
+      head: "Rajeev Thakur",
+      orgName: "Unilever India Exports Limited",
+      desc: "We have been working with DesignX, from last few years .Thanks to Development & Service team of DesignX for such regular service. It’s good to see that DesignX team makes continuous improvements on the job, post deployment, as per the feedback given.",
     },
     {
-      head: "Horem ipsum dolor sit3 ",
-      orgName: "Organization Name",
-      desc: "Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet.",
+      head: "Aakanksha",
+      orgName: "Unilever",
+      desc: "The team was very supportive and understanding of our needs. They went all out to ensure our standard questionnaire in place. They also provided continuous support for any improvements in the app on an ongoing basis. An overall smooth & satisfying experience!",
     },
     {
-      head: "Horem ipsum dolor sit4 ",
-      orgName: "Organization Name",
-      desc: "Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet.",
+      head: "Varun",
+      orgName: "Unilever, IT",
+      desc: "DesignX has enabled a key SC Collaboration platform for Hindustan Unilever, helping re-imagine the complete process from the perspective of premium user experience and top quality functional experience.",
     },
-    {
-      head: "Horem ipsum dolor sit5 ",
-      orgName: "Organization Name",
-      desc: "Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet, conghtu ipiscing elit Horem met, adipiscing elit.Horem ipsum dolor sit amet.",
-    },
+  
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -44,11 +40,11 @@ const TestimonialSlides = () => {
   
 
   return (
-    <div className="testBack w-full h-[1100px] lg:h-[800px] xl:h-[700px] px-[10px]">
+    <div className="testBack w-full h-[1100px] lg:h-[800px] xl:h-[780px] 2xl:h-[700px] px-[10px]">
       <div className="block lg:grid lg:grid-cols-2">
         <div>
-          <img src={arrowWhite} alt="" className="mt-[30px] ml-[241px]" />
-          <p className="w-[50%] ml-[102px] text-white font-poppins text-[42px] mt-[29px]">
+          <img src={arrowWhite} alt="" className="mt-[0px] lg:mt-[30px] ml-[80px] md:ml-[200px] lg:ml-[241px]" />
+          <p className="w-[50%] ml-[102px] text-white font-poppins text-[30px] lg:text-[42px] mt-[29px]">
             What Our Clients Are Saying...
           </p>
           <div className="ml-[102px]">
