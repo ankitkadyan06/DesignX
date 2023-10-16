@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Components/Header'
 import HeroPart from '../Components/Blog/HeroPart'
+import BlogPart from '../Components/Blog/BlogPart'
 
 const Blog = () => {
   return (
@@ -8,6 +9,7 @@ const Blog = () => {
         <Header/>
       <div className="mt-[70px]">
         <HeroPart/>
+        <BlogPart/>
       </div>
     </div>
   )
