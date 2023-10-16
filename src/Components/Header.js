@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Pricing', to: '#' },
   { name: 'Events', to: '#' },
   { name: 'About', to: '/Aboutus' },
-  { name: 'Blog', to: '#' },
+  { name: 'Blog', to: '/Blog' },
 ]
 
  export default function Header() {

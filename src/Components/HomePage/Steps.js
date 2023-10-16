@@ -127,9 +127,9 @@ const Steps = () => {
 
   return (
     <div>
-      <div className="steps block md:flex w-full lg:h-[100px] xl:h-[148px] mt-[-80px] items-center pl-[15%] sm:pl-[25%] pt-[10px] pb-[10px] md:pl-[50px]">
-        <ul className="block md:flex ">{renderSteps()}</ul>
-        <div className="flex ml-[16%] md:ml-[2%] 2xl:ml-[6%]">
+      <div className="steps block md:flex w-full md:h-[106px] xl:h-[148px] mt-[-80px] items-center pl-[15%] sm:pl-[25%] pt-[10px] pb-[10px] md:pl-[50px]">
+        <ul className="block md:flex pl-[0px] sm:pl-8">{renderSteps()}</ul>
+        <div className="flex ml-[22%] md:ml-[2%] 2xl:ml-[6%]">
           <img
             src={prevbutton}
             alt=""

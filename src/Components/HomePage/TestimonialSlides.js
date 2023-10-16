@@ -43,7 +43,7 @@ const TestimonialSlides = () => {
     <div className="testBack w-full h-[1100px] lg:h-[800px] xl:h-[780px] 2xl:h-[700px] px-[10px]">
       <div className="block lg:grid lg:grid-cols-2">
         <div>
-          <img src={arrowWhite} alt="" className="mt-[0px] lg:mt-[30px] ml-[80px] md:ml-[200px] lg:ml-[241px]" />
+          <img src={arrowWhite} alt="" className="mt-[0px] lg:mt-[30px] ml-[80px] md:ml-[200px] lg:ml-[120px] xl:ml-[240px]" />
           <p className="w-[50%] ml-[102px] text-white font-poppins text-[30px] lg:text-[42px] mt-[29px]">
             What Our Clients Are Saying...
           </p>
@@ -56,7 +56,7 @@ const TestimonialSlides = () => {
             </button>
           </div>
         </div>
-        <div className="mt-[60px]">
+        <div className="mt-[60px] ml-[0px] lg:ml-[-130px]">
           <img src={inverted} alt="" />
           <div className="carousel-container">
             {texts.map((text, index) => {
