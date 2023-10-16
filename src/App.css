@@ -172,3 +172,9 @@
   bottom: 93px;
   left: 80px;
 }
+
+.foundersDet{
+  background: url('./Components/assets/images/backForFound.svg');
+  width: 646px;
+  height: 270px;
+}
