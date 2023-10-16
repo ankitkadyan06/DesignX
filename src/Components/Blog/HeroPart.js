@@ -2,8 +2,8 @@ import React from 'react'
 
 const HeroPart = () => {
   return (
-    <div>
-      Hero
+    <div className='heroBlog w-full h-[276px] font-robotoSlab text-[57px] text-white'>
+      Blogs
     </div>
   )
 }

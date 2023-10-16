@@ -178,3 +178,9 @@
   width: 646px;
   height: 270px;
 }
+
+.heroBlog{
+  background: url('./Components/assets/images/backgroudNo.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
